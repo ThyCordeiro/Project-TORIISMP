@@ -35,7 +35,7 @@ Este site foi criado para apresentar o universo do servidor e centralizar todas 
 
 <p align="center">
 
-<a href="https://SEUSITE.com">
+<a href="http://toriismp.sbs/">
 <img src="https://api.microlink.io/?url=https://SEUSITE.com&screenshot=true&meta=false&embed=screenshot.url">
 </a>
 
