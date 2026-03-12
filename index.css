@@ -1,0 +1,283 @@
+@font-face {
+  font-family: nippo;
+  src: url("nippo.otf");
+}
+
+body {
+  margin: 0;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  padding-top: 70px;
+}
+h1 {
+  font-family: nippo;
+}
+.tix {
+  padding: 10px;
+}
+p {
+  font-family: nippo;
+}
+.ca h1 {
+  display: inline;
+}
+.ca {
+  background-color: rgba(255, 0, 0, 0.199);
+  padding: 35px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box; /* CORREÇÃO */
+}
+.ca:hover {
+  background-color: red;
+}
+
+.menu {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  font-family: nippo;
+}
+
+.menu a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.Inicio {
+  position: relative;
+  width: 100%;
+}
+.imgi {
+  width: 100%;
+  height: clamp(350px, 50vw, 600px);
+  object-fit: cover;
+}
+.imagem2 {
+  display: grid;
+  grid-template-areas: "sobrepor";
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.imagem2 img,
+.broco2 {
+  grid-area: sobrepor;
+}
+.broco2 h3 {
+  font-size: clamp(14px, 3.5vw, 18px);
+  line-height: 1.4;
+}
+.imagem2 img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.pdx {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 0, 0);
+  border-radius: 5px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  margin-top: auto; /* empurra para baixo */
+}
+.broco2 {
+  background-color: rgba(58, 58, 58, 0.33);
+  border-radius: 20px;
+
+  width: 90%;
+  max-width: 400px;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  z-index: 1;
+}
+.ixz {
+  display: flex;
+  width: 150px;
+  float: right;
+}
+
+.t2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 2.5rem);
+}
+
+.int {
+  color: white;
+  text-align: center;
+  border-radius: 70px;
+
+  background-color: rgba(50, 50, 50, 0.393);
+}
+h1 {
+  text-align: center;
+}
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.player {
+  width: 200px;
+  background: rgb(50, 50, 50);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: nippo;
+  text-align: center;
+  display: flex;
+  align-items: flex-start; /* Other items stay at start */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.pi {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pl {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.pl:hover {
+  color: rgb(121, 121, 121);
+}
+
+.reveal {
+  position: relative;
+  overflow: hidden;
+}
+.segura {
+  position: relative;
+  float: right;
+}
+
+.fala {
+  position: absolute;
+  bottom: 120%;
+  right: 0;
+
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: nippo;
+
+  opacity: 0;
+  transition: 0.3s;
+  max-width: 200px;
+}
+
+.fala::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 20px;
+
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.segura {
+  position: relative;
+  float: right;
+}
+.fv {
+  align-items: center;
+  text-align: center;
+}
+.fo {
+  background-color: rgba(72, 72, 72, 0.406);
+  border-radius: 40px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: red;
+  width: 90px;
+  margin: 20px auto;
+}
+.segura:hover .fala {
+  opacity: 1;
+}
+.barra {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: red;
+  z-index: 3;
+  transition: transform 3.5s ease;
+}
+
+.barra1 {
+  top: -50%;
+  left: -50%;
+  transform: rotate(35deg) translateY(0);
+}
+
+.barra2 {
+  bottom: -50%;
+  right: -50%;
+  transform: rotate(35deg) translateY(0);
+}
+
+.reveal.open .barra1 {
+  transform: rotate(35deg) translateY(-120%);
+}
+
+.reveal.open .barra2 {
+  transform: rotate(35deg) translateY(120%);
+}
+
+.classe {
+  text-align: center;
+  margin: 99px;
+}
+.classe span {
+  color: red;
+}
